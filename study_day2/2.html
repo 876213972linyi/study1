@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!--文档类型声明-->
+<html lang="en"> <!--lang 属性 语言属性 en表示英文 zh-CN 表示中文-->
+
+<head> <!--head 元素 ：文档配置信息-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--元数据：描述数据的数据 是配置信息-->
+  <title>小王子书评</title>
+</head>
+
+<body> <!--页面看到的东西写在body下面-->
+  <h1>《小王子》</h1>
+  <p>
+    一直就喜欢看童话，也一直认为童话都是比较直白易懂的，心里想当然的觉得童话不就是给小孩子们读的吗？
+  </p> <!--段落-->
+  <p>
+    它就是在全球销量仅次于《圣经》，从1943年诞生至今历久不衰，由法国作家安托万·圣埃克苏佩里写于1943年的《小王子》
+  </p>
+
+  <img src="http://www.newxue.com/d/file/p/0e87a0393840443de90183d956451ee1.jpg"> <!--网络图片，直接不用保存在本地，没网就用不了-->
+  <p>小王子爱玫瑰花，那是一朵全世界绝无仅有的花。玫瑰花很骄傲，总是态度傲慢地指使小王子为她做各种事情，毫不顾及小王子的感受。<br>小王子感觉很受伤，玫瑰花尽管深爱小王子，却始终不肯放低姿态，彼此相爱相杀，最终小王子负气出走
+  </p>
+  <img src="E:\myPc\mydocment\S.png">      <!--绝对路径，从根目录开始-->
+  <img src="./image1.png">   <!--相对路径，但是图片要放在这个目录下-->   <!--   ./代表当前文件夹.//代表上一级文件夹-->
+
+
+<!--
+  页面内的锚点效果
+  1.在想要跳转的元素上面加上id
+  2.定义a元素，并在a元素的href属性上面指向id
+
+-->
+<br>
+<a href="#them01">跳转到主题一</a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 id="them01">主题一</h1>
+<!--跳转到其他网页界面-->
+<a href="http://www.baidu.com" target="_blank">跳转到百度</a>   
+<!--点击图片，跳转到其他页面-->
+<a href="http://www.baidu.com" target="_blank"> 
+  <img src="./image1.png"><
+</a>
+<!--iframe可以实现在一个html文档中打开另一个html页面-->
+<iframe src="http://www.taobao.com" frameborder="0" ></iframe>   <!--frameborder 边框 0 无边框 1 有边框-->
+
+</body>
+
+</html>
