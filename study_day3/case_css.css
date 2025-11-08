@@ -1,0 +1,24 @@
+.div_style{
+  width: 700px;
+  height: 800px;
+  background-color: antiquewhite;
+  /* display: inline-block;
+  vertical-align: top;    */
+  /* 顶部对齐 */
+  float: left;  
+  /* 浮动效果 */
+ margin-top: 20px;
+ margin-right: 50px;
+}
+.img_style{
+  width: 700px;
+  height: 466px;
+  object-fit: cover;
+  /* 非常重要！ 不拉伸图像以适应大小 */
+ 
+}
+.span_style{
+  background-color: coral;
+  font-size: large;
+  color: aliceblue;
+}
