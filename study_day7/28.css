@@ -1,0 +1,71 @@
+body,ul,li,a{
+  padding: 0;
+  margin: 0;
+  /* 重置 */
+}
+ul>li{
+  margin-top: 20px;
+  /* 上下30 左右为0 */
+}
+
+ul,li,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  font-style:inherit;
+}
+ul> li> a{
+  display: inline-block;
+}
+ul> li .content{
+  display: inline;
+}
+ul> li> a:hover{
+color: #f04142;
+}
+ul li .list1{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  /* 内容居中 */
+  text-align: center;
+  /* 文字居中 */
+  line-height: 24px;
+  /* 加粗 */
+  font-weight: 300;
+  color: #080808;
+}
+ul li .content{
+  display: inline;
+}
+ul li .icon{
+  /* i元素为行内非替换元素，不能设置宽高  */
+  /* 相同代码放这里 不同代码单独写 */
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+  position: relative;
+  /* 相对于上为2px  =往下*/
+  top:2px;
+  left:4px;
+}
+ul>li .hot{
+  background-image: url(./hot_icon.svg);
+}
+ul>li .new{
+  background-image: url(./new_icon.svg);
+}
+
+/* 第 1 个 li */
+ul>li:nth-child(1) .list1 { color: #f04142; }
+
+/* 第 2 个 li */
+ul>li:nth-child(2) .list1 { color: #3fad13; }
+
+/* 第 3 个 li */
+ul>li:nth-child(3) .list1 { color: #ff9800; }
+
